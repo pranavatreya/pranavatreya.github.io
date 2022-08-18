@@ -7,25 +7,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" type="image/x-icon" href="images/p_favicon.jpg">
 
   <script type="text/javascript">
     function handleTab1Click() {
       document.getElementById('tab1').style.display = 'block';
       document.getElementById('tab2').style.display = 'none';
       document.getElementById('tab3').style.display = 'none';
+
+      document.getElementById('pubs-btn').src = 'images/research_clicked.png';
+      document.getElementById('projects-btn').src = 'images/projects_unclicked.png';
+      document.getElementById('additional-btn').src = 'images/additional_unclicked.png';
+      document.getElementById('pubs-btn').width = 127;
+      document.getElementById('pubs-btn').height = 50;
+      document.getElementById('projects-btn').width = 127;
+      document.getElementById('projects-btn').height = 50;
+      document.getElementById('additional-btn').width = 127;
+      document.getElementById('additional-btn').height = 50;
     }
 
     function handleTab2Click() {
       document.getElementById('tab1').style.display = 'none';
       document.getElementById('tab2').style.display = 'block';
       document.getElementById('tab3').style.display = 'none';
+
+      document.getElementById('pubs-btn').src = 'images/research_unclicked.png';
+      document.getElementById('projects-btn').src = 'images/projects_clicked.png';
+      document.getElementById('additional-btn').src = 'images/additional_unclicked.png';
+      document.getElementById('pubs-btn').width = 127;
+      document.getElementById('pubs-btn').height = 50;
+      document.getElementById('projects-btn').width = 127;
+      document.getElementById('projects-btn').height = 50;
+      document.getElementById('additional-btn').width = 127;
+      document.getElementById('additional-btn').height = 50;
     }
 
     function handleTab3Click() {
       document.getElementById('tab1').style.display = 'none';
       document.getElementById('tab2').style.display = 'none';
       document.getElementById('tab3').style.display = 'block';
+
+      document.getElementById('pubs-btn').src = 'images/research_unclicked.png';
+      document.getElementById('projects-btn').src = 'images/projects_unclicked.png';
+      document.getElementById('additional-btn').src = 'images/additional_clicked.png';
+      document.getElementById('pubs-btn').width = 127;
+      document.getElementById('pubs-btn').height = 50;
+      document.getElementById('projects-btn').width = 127;
+      document.getElementById('projects-btn').height = 50;
+      document.getElementById('additional-btn').width = 127;
+      document.getElementById('additional-btn').height = 50;
     }
   </script>
 </head>
@@ -43,10 +73,9 @@
               <p>I am an undergraduate at the <a href="https://www.cs.utexas.edu">University of Texas at Austin</a> doing research in robotics, 3D computer vision, and natural language processing.
               </p>
               <p style="text-align:center">
-                <a href="mailto:pranavatreya@utexas.edu">Email</a> &nbsp/&nbsp
-                <a href="data/Pranav_Atreya_Resume.pdf">Resume</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=bQowYEYAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/pranav-d-atreya">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/pranav-d-atreya">LinkedIn</a> &nbsp/&nbsp
+                <a href="mailto:pranavatreya@utexas.edu">Email</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -54,147 +83,488 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:94.5%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top:30px;padding-bottom:15px;">
+          <tbody>
             <tr>
-            <td style="padding:20px;width:100%;vertical-align:left">
-              <heading>Publications</heading>
-              <!-- <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
-              </p> -->
-            </td>
-            <td style="padding:20px;width:100%;vertical-align:left">
-              <heading>Projects</heading>
-              <!-- <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
-              </p> -->
-            </td>
-            <td style="padding:20px;width:100%;vertical-align:left">
-              <heading>Awards</heading>
-              <!-- <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
-              </p> -->
+            <td align="left" style="vertical-align:left" >
+              <a href="#"><img src="images/research_clicked.png" onClick="handleTab1Click()" id="pubs-btn" title="List of Publications" width="127" height="50" style="padding-right:15px;"/></a>
+              
+              <a href="#"><img src="images/projects_unclicked.png" onClick="handleTab2Click()" id="projects-btn" title="List of Projects" width="127" height="50" style="padding-right:15px;" /></a>
+              
+              <a href="#"><img src="images/additional_unclicked.png" onClick="handleTab3Click()" id="additional-btn" title="Additional Details" width="127" height="50" /></a>
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='optim-fkd-image'>
-                  <img src='images/optim-fkd-image.png' width="160"></div>
-                <img src='images/optim-fkd-image.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function malle_start() {
-                  document.getElementById('optim-fkd-image').style.opacity = "1";
-                }
 
-                function malle_stop() {
-                  document.getElementById('optim-fkd-image').style.opacity = "0";
-                }
-                malle_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2206.08487">
-                <papertitle>High-Speed Accurate Robot Control using Learned Forward Kinodynamics and Non-linear Least Squares Optimization</papertitle>
-              </a>
-              <br>
-              <strong>Pranav Atreya</strong>,
-              <a href="https://hareshkarnan.github.io">Haresh Karnan</a>,
-              Kavan Singh Sikand, 
-							<a href="https://www.cs.utexas.edu/~xiao/">Xuesu Xiao</a>, <br>
-              <a href="https://www.cs.utexas.edu/~srabiee/">Sadegh Rabiee</a>,
-              <a href="https://www.joydeepb.com">Joydeep Biswas</a>
-              <br>
-              <em>IROS</em>, 2022
-              <br>
-              <a href="https://arxiv.org/abs/2206.08487">Paper</a>
-              <p></p>
-              <p>
-              We devise Optim-FKD, a new paradigm for accurate, high speed control of a robot using a learned forward kinodynamic model and non-linear least squares optimization.
-              </p>
-            </td>
-          </tr>
+        <div id="tab1" style="display:block">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='optim-fkd-image'>
+                    <img src='images/optim-fkd-image.png' width="160" height="160"></div>
+                  <img src='images/optim-fkd-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('optim-fkd-image').style.opacity = "1";
+                  }
 
-          <tr onmouseout="malle_stop2()" onmouseover="malle_start2()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='vi-ikd-image'>
-                  <img src='images/vi-ikd-image.png' width="160"></div>
-                <img src='images/vi-ikd-image.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function malle_start2() {
-                  document.getElementById('vi-ikd-image').style.opacity = "1";
-                }
+                  function malle_stop() {
+                    document.getElementById('optim-fkd-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2206.08487">
+                  <papertitle>High-Speed Accurate Robot Control using Learned Forward Kinodynamics and Non-linear Least Squares Optimization</papertitle>
+                </a>
+                <br>
+                <strong>Pranav Atreya</strong>,
+                <a href="https://hareshkarnan.github.io">Haresh Karnan</a>,
+                Kavan Singh Sikand, 
+                <a href="https://www.cs.utexas.edu/~xiao/">Xuesu Xiao</a>, <br>
+                <a href="https://www.cs.utexas.edu/~srabiee/">Sadegh Rabiee</a>,
+                <a href="https://www.joydeepb.com">Joydeep Biswas</a>
+                <br>
+                <em>IROS</em>, 2022
+                <br>
+                <a href="https://arxiv.org/abs/2206.08487">arXiv</a>
+                <p></p>
+                <p>
+                We devise Optim-FKD, a new paradigm for accurate, high speed control of a robot using a learned forward kinodynamic model and non-linear least squares optimization.
+                </p>
+              </td>
+            </tr>
 
-                function malle_stop2() {
-                  document.getElementById('vi-ikd-image').style.opacity = "0";
-                }
-                malle_stop2()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2203.15983">
-                <papertitle>VI-IKD: High-Speed Accurate Off-Road Navigation using Learned Visual-Inertial Inverse Kinodynamics</papertitle>
-              </a>
-              <br>
-              <a href="https://hareshkarnan.github.io">Haresh Karnan</a>,
-              Kavan Singh Sikand, 
-              <strong>Pranav Atreya</strong>,
-              <a href="https://www.cs.utexas.edu/~srabiee/">Sadegh Rabiee</a>,<br>
-							<a href="https://www.cs.utexas.edu/~xiao/">Xuesu Xiao</a>, 
-              Garrett Warnell,
-              <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
-              <a href="https://www.joydeepb.com">Joydeep Biswas</a>
-              <br>
-              <em>IROS</em>, 2022
-              <br>
-              <a href="https://arxiv.org/abs/2203.15983">Paper</a>
-              <p></p>
-              <p>
-              In this work we learn a visual inverse kinodynamic model conditioned on image patches of the terrain ahead to better enable high-speed navigation on multiple different terrains. 
-              </p>
-            </td>
-          </tr>
-          
-          <tr onmouseout="malle_stop3()" onmouseover="malle_start3()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='s3f-image'>
-                  <img src='images/s3f-image.png' width="160"></div>
-                <img src='images/s3f-image.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function malle_start3() {
-                  document.getElementById('s3f-image').style.opacity = "1";
-                }
+            <tr onmouseout="malle_stop2()" onmouseover="malle_start2()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='vi-ikd-image'>
+                    <img src='images/vi-ikd-image.png' width="160" height="160"></div>
+                  <img src='images/vi-ikd-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start2() {
+                    document.getElementById('vi-ikd-image').style.opacity = "1";
+                  }
 
-                function malle_stop3() {
-                  document.getElementById('s3f-image').style.opacity = "0";
-                }
-                malle_stop3()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dl.acm.org/doi/abs/10.5555/3535850.3535856#sec-supp">
-                <papertitle>State Supervised Steering Function for Sampling-based Kinodynamic Planning</papertitle>
-              </a>
-              <br>
-              <strong>Pranav Atreya</strong>,
-              <a href="https://www.joydeepb.com">Joydeep Biswas</a>
-              <br>
-              <em>AAMAS</em>, 2022
-              <br>
-              <a href="https://arxiv.org/abs/2206.07227">Paper</a>
-              <p></p>
-              <p>
-              Optimal sampling-based motion planning algorithms when applied to kinodynamic planning make a trade off between computational efficiency and solution quality. With S3F we demonstrate that both are attainable by proposing a new way to learn the steering function required by these sampling-based planners and demonstrating how they can be integrated.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+                  function malle_stop2() {
+                    document.getElementById('vi-ikd-image').style.opacity = "0";
+                  }
+                  malle_stop2()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2203.15983">
+                  <papertitle>VI-IKD: High-Speed Accurate Off-Road Navigation using Learned Visual-Inertial Inverse Kinodynamics</papertitle>
+                </a>
+                <br>
+                <a href="https://hareshkarnan.github.io">Haresh Karnan</a>,
+                Kavan Singh Sikand, 
+                <strong>Pranav Atreya</strong>,
+                <a href="https://www.cs.utexas.edu/~srabiee/">Sadegh Rabiee</a>,<br>
+                <a href="https://www.cs.utexas.edu/~xiao/">Xuesu Xiao</a>, 
+                Garrett Warnell,
+                <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
+                <a href="https://www.joydeepb.com">Joydeep Biswas</a>
+                <br>
+                <em>IROS</em>, 2022
+                <br>
+                <a href="https://arxiv.org/abs/2203.15983">arXiv</a>
+                <p></p>
+                <p>
+                In this work we learn a visual inverse kinodynamic model conditioned on image patches of the terrain ahead to better enable high-speed navigation on multiple different terrains. 
+                </p>
+              </td>
+            </tr>
+            
+            <tr onmouseout="malle_stop3()" onmouseover="malle_start3()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='s3f-image'>
+                    <img src='images/s3f-image.png' width="160" height="160"></div>
+                  <img src='images/s3f-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start3() {
+                    document.getElementById('s3f-image').style.opacity = "1";
+                  }
+
+                  function malle_stop3() {
+                    document.getElementById('s3f-image').style.opacity = "0";
+                  }
+                  malle_stop3()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://dl.acm.org/doi/abs/10.5555/3535850.3535856#sec-supp">
+                  <papertitle>State Supervised Steering Function for Sampling-based Kinodynamic Planning</papertitle>
+                </a>
+                <br>
+                <strong>Pranav Atreya</strong>,
+                <a href="https://www.joydeepb.com">Joydeep Biswas</a>
+                <br>
+                <em>AAMAS</em>, 2022
+                <br>
+                <a href="https://arxiv.org/abs/2206.07227">arXiv</a>
+                <p></p>
+                <p>
+                Optimal sampling-based motion planning algorithms when applied to kinodynamic planning make a trade off between computational efficiency and solution quality. With S3F we demonstrate that both are attainable by proposing a new way to learn the steering function required by these sampling-based planners.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+
+        <div id="tab2" style="display:none">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='os-image'>
+                    <img src='images/os_image.png' width="160" height="160"></div>
+                  <img src='images/os_image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('os-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('os-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Custom Operating System</papertitle>
+                <br>
+                <i>C++, Assembly, QEMU, Git</i>
+                <br>
+                <p>
+                Built a functional OS from scratch with preemptive scheduling, virtual memory, file IO, and system calls.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='2pc-image'>
+                    <img src='images/2pc-image.png' width="160" height="160"></div>
+                  <img src='images/2pc-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('2pc-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('2pc-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Two-Phase Commit Protocol Implementation</papertitle>
+                <br>
+                <i>Rust</i>
+                <br>
+                <p>
+                Implemented the 2PC protocol for execution of a distributed atomic transaction. Uses memory safety and concurrency features of the Rust language.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='gpu-image'>
+                    <img src='images/gpu-image.jpg' width="160" height="160"></div>
+                  <img src='images/gpu-image.jpg' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('gpu-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('gpu-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>GPU Accelerated Fluid Dynamics Simulation</papertitle>
+                <br>
+                <i>CUDA, C++, Java</i>
+                <br>
+                <p>
+                  Simulated 2D and 3D fluid dynamics using the Navier-Stokes equations. Computation was accelerated with GPU code written in CUDA.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='dyslexiAR-image'>
+                    <img src='images/dyslexiAR-image.png' width="160" height="160"></div>
+                  <img src='images/dyslexiAR-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('dyslexiAR-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('dyslexiAR-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>DyslexiAR - Assistive Technology iOS App for Dyslexic Individuals</papertitle>
+                <br>
+                <i>Swift, C, Objective-C, EchoAR</i>
+                <br>
+                <p>
+                  DyslexiAR helps dyslexic individuals read and write by recognizing words via OCR and displaying augmented reality models representing the words.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='funlang-image'>
+                    <img src='images/funlang-image.png' width="160" height="160"></div>
+                  <img src='images/funlang-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('funlang-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('funlang-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Funlang</papertitle>
+                <br>
+                <i>C</i>
+                <br>
+                <p>
+                  Wrote an interpreter and compiler for a programming language with data types, dynamic memory allocation, functions, control structures, and file IO. Compiler is self-hosting (the compiler is written in the language it compiles).
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ml-lib-image'>
+                    <img src='images/ml-lib-image.png' width="160" height="160"></div>
+                  <img src='images/ml-lib-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('ml-lib-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('ml-lib-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Custom Deep Learning Library</papertitle>
+                <br>
+                <i>Java</i>
+                <br>
+                <p>
+                  Implemented an efficient neural network training library from scratch. Library implements many deep learning primitives such as various activation functions, L1 and L2 regularization, and dropout.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='search-engine-image'>
+                    <img src='images/search-engine-image.jpg' width="160" height="160"></div>
+                  <img src='images/search-engine-image.jpg' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('search-engine-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('search-engine-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Custom Search Engine</papertitle>
+                <br>
+                <i>Java</i>
+                <br>
+                <p>
+                  Developed software that crawls web pages and efficiently indexes them using a compressed trie. Built a search engine using relevance feedback and the PageRank algorithm.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='cpu-pipeline-image'>
+                    <img src='images/cpu-pipeline.png' width="160" height="160"></div>
+                  <img src='images/cpu-pipeline.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('cpu-pipeline-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('cpu-pipeline-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Pipelined CPU with Branch Predictor</papertitle>
+                <br>
+                <i>Verilog</i>
+                <br>
+                <p>
+                  Implemented a five stage processor in Verilog based off a custom ISA. Can handle data, resource, and control hazards. Implemented a branch predictor with a direct-mapped cache.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ultrasound-device-image'>
+                    <img src='images/ultrasound-device-image.jpg' width="160" height="160"></div>
+                  <img src='images/ultrasound-device-image.jpg' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('ultrasound-device-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('ultrasound-device-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Ultrasound based Tumor Identification Device</papertitle>
+                <br>
+                <i>Python, Raspberry Pi</i>
+                <br>
+                <p>
+                  Fitted Raspberry Pi with ultrasound sensor to take ultrasound scans of the body part in question. The Pi is programmed to process scan image with a CNN and determine the likelihood of the presence of five different deleterious growth types.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='fact-check-app-image'>
+                    <img src='images/fact-check-app-image.png' width="160" height="160"></div>
+                  <img src='images/fact-check-app-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('fact-check-app-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('fact-check-app-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>AI and NLP for Determining Credibility of News Articles</papertitle>
+                <br>
+                <i>Java, Android, JSoup</i>
+                <br>
+                <p>
+                  Analyzes biases of the publisher, recency of the articles, and performs fact checking with other news sources to evaluate credibility of news article.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+
+        <div id="tab3" style="display:none">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding-left:20px;width:25%;vertical-align:middle">
+                <span style="color:#1ba20c"><strong><font size="+1">Awards</font></strong></span> <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Winner of the Capital of Texas Undergraduate Research Conference (CTURC) [2022] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Best Virtual Reality Hack @Hack The Northeast [2021] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Best iOS App @Orion Hacks [2021] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; First Award, Physical Science & Engineering, Synopsys Technology Championship [2019] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Mu Alpha Theta Award for Excellence in Mathematics [2019] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Honorable Mention, Computational Systems & Analysis, California Science and Engineering Fair [2018] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; First Award, Biological Science & Engineering, Synopsys Technology Championship [2018] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Naval Science Award, United States Navy & Marine Corps [2018] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Special Congressional Recognition - Congressional App Challenge [2017] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; AP National Scholar with Distinction, National Merit Scholarship Commended [2019] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Recognition for Science Research, Mayor of Cupertino [2018, 2019] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; Inspire Award, Silicon Valley Regional Robotics Competition [2017] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; USA Computing Olympiad (USACO) Gold Level [2017]
+
+                <br>
+                <br>
+                <br>
+
+                <span style="color:#1ba20c"><strong><font size="+1">Volunteering</font></strong></span> <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; <strong>Research Ambassador at UT Austin</strong> <br> &emsp; &nbsp; &nbsp; My responsibilities include serving in a Q&A panel in bimonthly undergraduate research events, participating in research &emsp; &emsp; &nbsp; &nbsp; photoshoots and interviews, and motivating undergraduate students to get involved in research. [2021 - Present] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; <strong>Kaiser Permanente</strong> <br> &emsp; &nbsp; &nbsp; 200+ hours of volunteer experience. [2018 - 2019] <br>
+                <span style="color:#1933b6">&gt;</span> &nbsp; &nbsp; &nbsp; <strong>Literature Tutor, Math & Physics TA</strong> <br> &emsp; &nbsp; &nbsp; Tutored high-school students in English Literature after school for one week out of every month. Teaching Assistant for &emsp; &emsp; &nbsp; &nbsp; Calculus BC and Physics AP classes. [2016 - 2019]
+              
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      
+        <p style="text-align:right;"> 
+          Website adapted from <a href="https://jonbarron.info">Jon Barron</a>
+        </p>
+
       </td>
     </tr>
   </table>
