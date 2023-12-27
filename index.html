@@ -50,7 +50,7 @@
       document.getElementById('pubs-btn').src = 'images/research_unclicked_green.png';
       document.getElementById('projects-btn').src = 'images/projects_unclicked_green.png';
       document.getElementById('additional-btn').src = 'images/additional_clicked_green.png';
-      document.getElementById('pubs-btn').width = 110;
+      document.getElementById('pubs-btn').width = 110;https://github.com/pranavatreya/pranavatreya.github.io.git
       document.getElementById('pubs-btn').height = 42;
       document.getElementById('projects-btn').width = 110;
       document.getElementById('projects-btn').height = 42;
@@ -74,15 +74,16 @@
               <p> I recently graduated with my BS in Computer Science at UT Austin, where I was a member of the <a href="https://www.cs.utexas.edu/turing-scholars">Turing Scholars</a> and <a href="https://www.deansscholars.org">Dean’s Scholars</a> Honors programs. At UT I was fortunate to be advised by <a href="https://www.joydeepb.com">Prof. Joydeep Biswas</a>, <a href="https://www.cs.utexas.edu/~eunsol/">Prof. Eunsol Choi</a>, and <a href="https://www.cs.utexas.edu/~yukez/">Prof. Yuke Zhu</a>.
               <!-- <p>I am an undergraduate at the <a href="https://www.cs.utexas.edu">University of Texas at Austin</a> doing research in robotics, 3D computer vision, and natural language processing. 
               <p>I am interested in developing robotic systems that can learn efficiently in the real world, using tools from machine learning and computer vision. -->
-              <p>News <br> > 05/2023 &#8212 Co-organized the <a href="https://cps2023-race.f1tenth.org">12th F1TENTH Racing Competition</a><br> > 10/2022 &#8212 Presented at <a href="https://iros2022.org">IROS</a> in Kyoto, Japan! <br> > 07/2022 &#8212 Two papers accepted at IROS <br> <!-- > 05/2022 &#8212 Competed in the <a href=https://icra2022-race.f1tenth.org>F1TENTH</a> racing competition at ICRA <br> --> > 05/2022 &#8212 Presented paper at <a href="https://aamas2022-conference.auckland.ac.nz">AAMAS</a> <br> > 03/2022 &#8212 Winner of <a href="https://sites.google.com/view/cturc/home">CTURC</a> undergraduate research competition <br> > 12/2021 &#8212 Paper accepted at AAMAS
+              <!-- <p>News <br> > 05/2023 &#8212 Co-organized the <a href="https://cps2023-race.f1tenth.org">12th F1TENTH Racing Competition</a><br> > 10/2022 &#8212 Presented at <a href="https://iros2022.org">IROS</a> in Kyoto, Japan! <br> > 07/2022 &#8212 Two papers accepted at IROS <br>> 05/2022 &#8212 Presented paper at <a href="https://aamas2022-conference.auckland.ac.nz">AAMAS</a> <br> > 03/2022 &#8212 Winner of <a href="https://sites.google.com/view/cturc/home">CTURC</a> undergraduate research competition <br> > 12/2021 &#8212 Paper accepted at AAMAS -->
               </p>
               <p style="text-align:center">
+                <a href="mailto:pranavatreya@eecs.berkeley.edu">Email</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=bQowYEYAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/pranav-d-atreya">LinkedIn</a> &nbsp/&nbsp
-                <a href="mailto:pranavatreya@utexas.edu">Email</a>
+                <a href="https://twitter.com/pranav_atreya">Twitter</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td style="padding:2.5%;width:30%;max-width:30%">
               <a href="images/kyoto_portrait.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/kyoto_portrait_circle.png" class="hoverZoomLink"></a>
             </td>
           </tr>
@@ -102,6 +103,87 @@
 
         <div id="tab1" style="display:block">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='susie-image'>
+                    <img src='images/multiprompt-image.png' width="160" height="160"></div>
+                  <img src='images/multiprompt-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2311.09579">
+                  <papertitle>Crafting In-context Examples according to LMs' Parametric Knowledge</papertitle>
+                </a>
+                <br>
+                <a href="https://lilys012.github.io">Yoonsang Lee*</a>,
+                <strong>Pranav Atreya*</strong>,
+                <a href="https://www.cs.utexas.edu/~xiye/">Xi Ye</a>,
+                <a href="https://eunsol.github.io">Eunsol Choi</a> <br>
+                <em>Preprint</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2311.09579">arXiv</a>
+                <p></p>
+                <p>
+                What prompts elicit language models to best answer knowledge intensive questions? We find that a mix of in-context examples that the model knows how to answer and doesn't know yields optimal QA performance.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='susie-image'>
+                    <img src='images/susie-image.png' width="160" height="160"></div>
+                  <img src='images/susie-image.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('susie-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('susie-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2310.10639">
+                  <papertitle>Zero-Shot Robotic Manipulation with Pre-Trained Image-Editing Diffusion Models</papertitle>
+                </a>
+                <br>
+                <a href="https://kevin.black">Kevin Black*</a>,
+                <a href="https://nakamotoo.github.io">Mitsuhiko Nakamoto*</a>,
+                <strong>Pranav Atreya</strong>,
+                <a href="https://homerwalke.com">Homer Walke</a>,
+                <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>, <br>
+                <a href="https://aviralkumar2907.github.io">Aviral Kumar</a>,
+                <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+                <br>
+                <em>Preprint</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2310.10639">arXiv</a>
+                /
+                <a href="https://rail-berkeley.github.io/susie/">website</a>
+                <p></p>
+                <p>
+                SuSIE leverages the internet pretraining of image generation models like InstructPix2Pix to achieve zero-shot robot manipulation on unseen objects, distractors, and scenes.
+                </p>
+              </td>
+            </tr>
+            
             <tr onmouseout="malle_stop()" onmouseover="malle_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
