@@ -103,7 +103,50 @@
 
         <div id="tab1" style="display:block">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
+              
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='soar-image'>
+                    <img src='images/soar_teaser.png' width="160" height="160"></div>
+                  <img src='images/soar_teaser.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://auto-improvement.github.io/static/paper.pdf">
+                  <papertitle>Autonomous Improvement of Instruction Following Skills via Foundation Models</papertitle>
+                </a>
+                <br>
+                <a href="https://zhouzypaul.github.io/">Zhiyuan Zhou*</a>,
+                <strong>Pranav Atreya*</strong>,
+                <a href="https://www.linkedin.com/in/abraham-lee-4a0497242?original_referer=https%3A%2F%2Fwww.google.com%2F">Abraham Lee</a>,
+                <a href="https://homerwalke.com/">Homer Walke</a>,
+                <a href="https://www.oiermees.com/">Oier Mees</a>,
+                <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+                <br>
+                <em>Preprint</em>, 2024
+                <br>
+                <a href="https://auto-improvement.github.io/static/paper.pdf">paper</a>
+                /
+                <a href="https://auto-improvement.github.io/">website</a>
+                <p></p>
+                <p>
+                Robot learning requires data, but does the data need to be human collected? We find that we can boostrap a self-improvement process with a pre-trained policy and VLMs, collecting autonomous data at scale that can be used to improve the policy completely on its own.
+                </p>
+                <br>
+              </td>
+            </tr>
+
             <tr onmouseout="malle_stop()" onmouseover="malle_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -134,6 +177,8 @@
                 <em>NAACL Findings</em>, 2024
                 <br>
                 <a href="https://arxiv.org/abs/2311.09579">arXiv</a>
+                /
+                <a href="https://pranavatreya.github.io/">website</a>
                 <p></p>
                 <p>
                 What prompts elicit language models to best answer knowledge intensive questions? We find that a mix of in-context examples that the model knows how to answer and doesn't know yields optimal QA performance.
